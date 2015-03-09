@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tritonia.bountify" >
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -15,6 +24,34 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".pregame"
+            android:label="@string/title_activity_pregame" >
+        </activity>
+        <activity
+            android:name=".ChooseBounty"
+            android:label="@string/title_activity_choose_bounty" >
+        </activity>
+        <activity
+            android:name=".BountyActivity"
+            android:label="@string/title_activity_bounty" >
+        </activity>
+        <activity
+            android:name=".CollectActivity"
+            android:label="@string/title_activity_collect" >
+        </activity>
+        <activity
+            android:name=".CheckpointActivity"
+            android:label="@string/title_activity_checkpoint" >
+        </activity>
+        <activity
+            android:name=".PictureActivity"
+            android:label="@string/title_activity_picture" >
+        </activity>
+        <activity
+            android:name=".CreateBountyActivity"
+            android:label="@string/title_activity_create_bounty" >
         </activity>
     </application>
 

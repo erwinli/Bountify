@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Selected Hunt Name"
+        android:id="@+id/selectedHuntTextView"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="50dp" />
+
+    <ScrollView
+        android:layout_width="357dp"
+        android:layout_height="260dp"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="huntDescription"
+            android:id="@+id/huntDescriptionTextView"
+            android:layout_gravity="center_horizontal" />
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:id="@+id/huntTimeTextView"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Begin"
+        android:id="@+id/startButton"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
